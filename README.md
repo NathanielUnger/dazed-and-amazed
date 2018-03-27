@@ -7,6 +7,6 @@
 
 ## recursive abstraction
   When I am asked to
-    <br>return the boolean value of the statement "the maze is navigable, having a legal travel path that is continuous from start point to existing treasure"
+    <br>  return the boolean value of the statement "the maze is navigable, having a legal travel path that is continuous from start point to existing treasure"
     <br>the recursive abstraction can
-  <br>return the boolean value of the statement "the maze is navigable, having a legal travel path that is continuous from start point to existing treasure" given moves already made.
+  <br>  return the boolean value of the statement "the maze is navigable, having a legal travel path that is continuous from start point to existing treasure" given moves already made.
