@@ -1,7 +1,7 @@
 # dazed-and-amazed
 
 ## personnel
-  Unger, Nathaniel
+  Unger, Nathaniel<br>
   Zhao, Kevin
   
 ## statement of problem
