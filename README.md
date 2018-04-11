@@ -30,7 +30,7 @@
     else 
       move one block forward in the most leftward adjacent direction,
       where the path has never travelled before
-      ```
+```
     
 ## class(es), with fields and methods
   mazeSolver.java
