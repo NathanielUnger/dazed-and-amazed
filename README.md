@@ -19,6 +19,7 @@
   return the boolean value of the statement "the maze is navigable, having a legal travel path that is one unit long and that is continuous from a start point to an existing treasure"
   
 ## English or pseudocode description of algorithm
+```
   if the next closest adjacent square is the treasure
     return true
   else if there are no open paths (dead end)
@@ -29,6 +30,7 @@
     else 
       move one block forward in the most leftward adjacent direction,
       where the path has never travelled before
+      ```
     
 ## class(es), with fields and methods
   mazeSolver.java
