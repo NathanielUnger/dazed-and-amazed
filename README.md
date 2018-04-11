@@ -32,11 +32,11 @@
 ```
     
 ## class(es), with fields and methods
-  mazeSolver.java
-  userOfMazeSolver.java
-  Path lineOfPath;
-  moveForward();
-  turn90();
-  remove();
+  mazeSolver.java  
+  userOfMazeSolver.java  
+  Path lineOfPath;  
+  moveForward();  
+  turn90();  
+  remove(); 
 
 ## version*n* wish list
