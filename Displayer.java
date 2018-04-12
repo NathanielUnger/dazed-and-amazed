@@ -5,7 +5,7 @@
   To make successive displays scroll, specify a window height of 0.
  */
 public class Displayer {
-
+    
     private int windowHeight;
     private java.io.Console console;
 
@@ -25,7 +25,7 @@ public class Displayer {
      */
     public void atTopOfWindow( String pic) {
         System.out.print( pic);
-
+        
         // fill rest of screen
         for( int linesPrinted = lineSeparatorsIn( pic)
            ; linesPrinted < windowHeight -1  // leave 1 for cursor
@@ -41,7 +41,7 @@ public class Displayer {
 
     /**
       @return the number of lineSeparators in @string
-
+      
       It would be pathetic for Java to lack a built-in
       substring-counter. But I've wasted too long looking for it.
      */
