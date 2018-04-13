@@ -39,4 +39,8 @@
   turn90();  
   remove(); 
 
+## known bugs
+  mazeSolver is unable to solve mazes just yet, though the maze.go(direction) function does work. the method always returns false, except when an explorer is spawned on top of the treasure. when the explorer does land on top of the treasure, the method doesn't return true. 
+  i'm familiar on how to backtrack the maze to a previous position, and have the working code, but am still unable to implement it into our design. 
+
 ## version*n* wish list
