@@ -10,16 +10,29 @@
 */
 
 public class MazeSolver {
-  private static int[] directions = new int[]{Maze.NORTH, Maze.EAST, Maze.SOUTH, Maze.WEST};
-  public static boolean solve(Maze maze) {
-    Maze snapshot = new Maze(maze);
-    if (maze.explorerIsOnA() == 0) {
-			return true;
+    private Maze maze;
+    private static int[] directions = {Maze.EAST, Maze.NORTH, Maze.WEST, Maze.SOUTH};
+    public MazeSolver(Maze m) {
+        maze = new Maze(m);
     }
-    else {
-      maze.go(Maze.EAST);
-      System.out.println(maze);
-      solve(maze);
-    }
-    return false;
-  }}
+
+    public boolean solve() {
+        if (maze.explorerIsOnA() == Maze.TREASURE) {
+            return true;
+        }
+        else if (maze.explorerIsOnA() == Maze.WALL) {
+            return false;
+        }
+	else {
+        Maze snapshot = new Maze(maze);
+        for (int direction : directions) {
+            maze.dropA(Maze.WALL);
+            maze.go(direction);
+            if (solve()) {
+                return true;
+            }
+            maze = new Maze(snapshot);
+        }
+        return false;
+    }}
+}
