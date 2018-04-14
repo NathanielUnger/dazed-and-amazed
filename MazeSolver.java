@@ -32,6 +32,7 @@ public class MazeSolver {
                 return true;
             }
             maze = new Maze(snapshot);
+		System.out.println(maze);
         }
         return false;
     }}
