@@ -25,9 +25,9 @@ public class MazeSolver {
         }
       	else {
             Maze snapshot = new Maze(maze);
-            for (int direction : directions) {
+            for (int dir = 0; dir < 4; dir++) {
                 maze.dropA(Maze.WALL);
-                maze.go(direction);
+                maze.go(directions[dir]);
                 if (solve()) {
                     return true;
                 }
