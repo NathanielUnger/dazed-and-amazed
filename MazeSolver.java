@@ -10,13 +10,13 @@
 */
 
 public class MazeSolver {
-    private Maze maze;
+    private static Maze maze;
     private static int[] directions = {Maze.EAST, Maze.NORTH, Maze.WEST, Maze.SOUTH};
     public MazeSolver(Maze m) {
         maze = new Maze(m);
     }
 
-    public boolean solve() {
+    public static boolean solve() {
         if (maze.explorerIsOnA() == Maze.TREASURE) {
             return true;
         }
