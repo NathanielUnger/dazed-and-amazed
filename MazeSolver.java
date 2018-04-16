@@ -16,7 +16,7 @@ public class MazeSolver {
         maze = new Maze(m);
     }
 
-    public static boolean solve() {
+    public boolean solve() {
         if (maze.explorerIsOnA() == Maze.TREASURE) {
             return true;
         }
