@@ -17,7 +17,7 @@ public class UserOfMazeSolver {
                             );
         System.out.println( maze + System.lineSeparator());
 
-        System.out.println(MazeSolver.maze.solve());
+        System.out.println(MazeSolver.solve());
       
       
     }}

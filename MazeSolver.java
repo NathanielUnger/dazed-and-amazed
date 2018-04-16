@@ -23,17 +23,18 @@ public class MazeSolver {
         else if (maze.explorerIsOnA() == Maze.WALL) {
             return false;
         }
-	else {
-        Maze snapshot = new Maze(maze);
-        for (int direction : directions) {
-            maze.dropA(Maze.WALL);
-            maze.go(direction);
-            if (solve()) {
-                return true;
+      	else {
+            Maze snapshot = new Maze(maze);
+            for (int direction : directions) {
+                maze.dropA(Maze.WALL);
+                maze.go(direction);
+                if (solve()) {
+                    return true;
+                }
+                maze = new Maze(snapshot);
+                System.out.println(maze);
             }
-            maze = new Maze(snapshot);
-		System.out.println(maze);
+            return false;
         }
-        return false;
-    }}
-}
+    }
+  }
